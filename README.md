@@ -73,14 +73,17 @@ flowchart TD
 
     TUE{Tübingen City}
 
+    P{German Project Fundings}
+
     TUE_LOC{Local Companies}
     
     KF(Tübingen<br>KlangFolk e.V.<br>
     Board:<br>- Nikolai von Krusenstiern,<br>- ...,<br>
     klangfolk.de)
 
-    TUE --> |6k EUR| KF
+    TUE ==> |6k EUR<br>every Year| KF
     TUE_LOC --> KF
+    P --> KF
     E -.-> |2025 ?| KF
 
     MCS["Música con Señas<br>(Ritmo con Señas)"]
@@ -109,7 +112,7 @@ flowchart TD
 
     class rcs,MCS_1,MCS_2,DA_MCS,B_P,B_R BLUE
     class x BLU
-    class E,TUE,TUE_LOC YEL
+    class E,TUE,TUE_LOC,P YEL
     class KF ORA
 ```
 
