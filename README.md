@@ -4,9 +4,13 @@
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 flowchart TD
-    rcs[(Ritmo con Señas<br>Germany)]
+    rcs[(Ritmo con Señas<br>Germany<br>
+    ritmo-con-senas.de)]
+
     TUE[Tübingen<br>KlangFolk e.V.<br>klangfolk.de]
+
     DA[Darmstadt]
+    
     B[Berlin]
 
     rcs -.-> TUE
