@@ -69,7 +69,17 @@ flowchart TD
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 flowchart TD
-    KF(Tübingen<br>KlangFolk e.V.<br>klangfolk.de)
+    E{Erasmus
+        maybe 2025?}
+    TUE{Tübingen City
+        yearly 6k Euro}
+    
+    KF(Tübingen<br>KlangFolk e.V.<br>
+    Nikolai von Krusenstiern, ...<br>
+    klangfolk.de)
+
+    TUE --> KF
+    E -.-> KF
 
     MCS[Música con Señas]
     TF[Tü Folk Orchester]
@@ -97,9 +107,8 @@ flowchart TD
 
     class rcs,MCS_1,MCS_2,DA_MCS,B_P,B_R BLUE
     class x BLU
-    class x YEL
+    class E,TUE YEL
     class KF ORA
-
 ```
 
 
