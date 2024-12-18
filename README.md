@@ -3,76 +3,66 @@
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 flowchart TD
-    subgraph SCOS
-        subgraph Telemety
-            TMC[TM Constant]
-            TM[S/C Telemetry]
-            DP[Derived Parameter]
-        end
-        subgraph Calibration
-            WODB[WODB Database]
-            CTM[Calibrated TM<br>Engineering Value]
-        end
-        subgraph Raw
-            RAW[Raw TM]
-        end
+    rcs[(Ritmo con Señas<br>Germany)]
+    TUE[Tübingen<br>KlangFolk e.V.<br>klangfolk.de]
+    DA[Darmstadt]
+    B[Berlin]
 
-        subgraph EXIF
-            TMP[TM Pool]
-        end
-    end
+    rcs -.-> TUE
+    rcs -.-> DA
+    rcs -.-> B
 
-    subgraph MOIS
-        subgraph MOIS_EXIF
-            MTM[Raw TM]
-            MCTM[Calibrated TM]
-        end
-        subgraph MOIS_Calibration
-            MWODB[WODBDatabase]
-            MCTM2[MOIS Calibrated TM]
-        end
-        EX[Executer]
-        J[Jython]
-    end
+    TUE_MCS(Música con Señas
+        Cristóbal Araya Altamirano & Cédric Berner
+        weekly: 8-20<br>
+        <a href>mcs@klangfolk.de</a>
+        <a href>klangfolk.de/mcs</a>)
 
-    TMC --> RAW
-    TM --> RAW
-    DP --> RAW
-    TM ==> WODB
-    DP ==> WODB
-    WODB ==> CTM
+    TUE_MCS_2(Música con Señas
+        Nikolai von Krusenstiern
+        bi-weekly: 5-12<br>
+        <a href>nikolai@ritmo-con-senas.de</a>
+        <a href>klangfolk.de/mcs</a>)
+    
 
-    RAW --> TMP
-    CTM ==> TMP
+    TUE <--> TUE_MCS
+    TUE <--> TUE_MCS_2
 
-    TMP --> MTM
-    TMP ==> MCTM
-    MTM --> MWODB
-    MWODB ==> MCTM2
+    DA_MCS(Música con Señas
+        Nikolai von Krusenstiern
+        monthly: 5-12<br>
+        <a href>nikolai@ritmo-con-senas.de</a>
+        <a href>ritmo-con-senas.de/darmstadt</a>)
 
-    MTM --> EX
-    MCTM ==> |If S2K calibrated?| J
-    MCTM ==> |If S2K calibrated?| EX
-    MCTM2 ===> |If MOIS WODB Calibrated?| EX
+    DA --> DA_MCS
 
-    MTM --> J
-    MCTM2 ==> |If MOIS WODB Calibrated?| J
+    B_P(Percussion and Brass Band
+        Bruno Abulafia
+        Concerts: monthly ?<br>
+        <a href>bruno@ritmo-con-senas.de</a>
+        <a href>ritmo-con-senas.de/berlin</a>)
 
-    linkStyle 11 stroke-width:4px,stroke:blue
-    linkStyle 12 stroke-width:4px,stroke:blue
+    B_R(Rixdorf con Señas
+        Timm
+        Sessions: bi-monthly ?<br>
+        <a href>rixdorfconsenas@posteo.de</a>
+        <a href>ritmo-con-senas.de/berlin</a>)
+    B --> B_P
+    B --> B_R
 
-    linkStyle 13 stroke-width:4px,stroke:red
-    linkStyle 15 stroke-width:4px,stroke:red
+
+%%    linkStyle 11 stroke-width:4px,stroke:blue
 
     classDef BLUE fill:lightblue
     classDef YEL fill:yellow
     classDef BLU fill:skyblue
     classDef ORA fill:orange
 
-    class x BLUE
+    class rcs,TUE_MCS,TUE_MCS_2,DA_MCS,B_P,B_R BLUE
     class x BLU
     class x YEL
-    class x ORA
+    class TUE ORA
+
 
 ```
 
