@@ -1,5 +1,6 @@
 # Ritmo con Señas - Germany - Org-Charts
 
+## Germany - Org-Charts
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 flowchart TD
@@ -24,7 +25,6 @@ flowchart TD
         <a href>nikolai@ritmo-con-senas.de</a>
         <a href>klangfolk.de/mcs</a>)
     
-
     TUE <--> TUE_MCS
     TUE <--> TUE_MCS_2
 
@@ -50,7 +50,6 @@ flowchart TD
     B --> B_P
     B --> B_R
 
-
 %%    linkStyle 11 stroke-width:4px,stroke:blue
 
     classDef BLUE fill:lightblue
@@ -63,6 +62,43 @@ flowchart TD
     class x YEL
     class TUE ORA
 
+```
+
+## KlangFolk e.V.
+
+```mermaid
+%%{init: {'theme':'forest'}}%%
+flowchart TD
+    KF(Tübingen<br>KlangFolk e.V.<br>klangfolk.de)
+
+    MCS[Música con Señas]
+    TF[Tü Folk Orchester]
+    BF[BalFolk]
+
+    KF <--> MCS
+    KF <--> TF
+    KF <--> BF
+
+    MCS_1(Música con Señas<br>
+        Cristóbal Araya Altamirano & Cédric Berner)
+
+    MCS_2(Música con Señas<br>
+        Nikolai von Krusenstiern)    
+    
+    MCS --> MCS_1
+    MCS --> MCS_2
+
+%%    linkStyle 11 stroke-width:4px,stroke:blue
+
+    classDef BLUE fill:lightblue
+    classDef YEL fill:yellow
+    classDef BLU fill:skyblue
+    classDef ORA fill:orange
+
+    class rcs,MCS_1,MCS_2,DA_MCS,B_P,B_R BLUE
+    class x BLU
+    class x YEL
+    class KF ORA
 
 ```
 
