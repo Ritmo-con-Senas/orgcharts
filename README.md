@@ -5,7 +5,7 @@
 %%{init: {'theme':'forest'}}%%
 flowchart TD
     rcs[(Ritmo con Señas<br>Germany<br>
-    ritmo-con-senas.de)]
+    <a href>ritmo-con-senas.de</a>)]
 
     TUE[Tübingen<br>KlangFolk e.V.<br>klangfolk.de]
 
