@@ -4,10 +4,15 @@
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 flowchart TD
-    rcs[(Ritmo con Señas<br>Germany<br>
+    rcs[(<b>Ritmo con Señas<br>Germany</b>
+    <i>Nikolai von Krusenstiern</i><br>
+    <a href>nikolai@ritmo-con-senas.de</a>
     <a href>ritmo-con-senas.de</a>)]
 
-    TUE[Tübingen<br>KlangFolk e.V.<br>klangfolk.de]
+    TUE[Tübingen<br>
+    <b>KlangFolk e.V.</b><br>
+    <a href>vorstand@klangfolk.de</a>
+    <a href>klangfolk.de</a>]
 
     DA[Darmstadt]
     
@@ -17,14 +22,15 @@ flowchart TD
     rcs -.-> DA
     rcs -.-> B
 
-    TUE_MCS(Música con Señas
-        Cristóbal Araya Altamirano & Cédric Berner
+    TUE_MCS(<b>Música con Señas</b>
+        <i>Cristóbal Araya Altamirano
+        & Cédric Berner</i>
         weekly: 8-20<br>
         <a href>mcs@klangfolk.de</a>
         <a href>klangfolk.de/mcs</a>)
 
-    TUE_MCS_2(Música con Señas
-        Nikolai von Krusenstiern
+    TUE_MCS_2(<b>Música con Señas</b>
+        <i>Nikolai von Krusenstiern</i>
         bi-weekly: 5-12<br>
         <a href>nikolai@ritmo-con-senas.de</a>
         <a href>klangfolk.de/mcs</a>)
@@ -32,22 +38,22 @@ flowchart TD
     TUE <--> TUE_MCS
     TUE <--> TUE_MCS_2
 
-    DA_MCS(Música con Señas
-        Nikolai von Krusenstiern
+    DA_MCS(<b>Música con Señas</b>
+        <i>Nikolai von Krusenstiern</i>
         monthly: 5-12<br>
         <a href>nikolai@ritmo-con-senas.de</a>
         <a href>ritmo-con-senas.de/darmstadt</a>)
 
     DA --> DA_MCS
 
-    B_P(Percussion and Brass Band
-        Bruno Abulafia
+    B_P(<b>Percussion and Brass Band</b>
+        <i>Bruno Abulafia</i>
         Concerts: monthly ?<br>
         <a href>bruno@ritmo-con-senas.de</a>
         <a href>ritmo-con-senas.de/berlin</a>)
 
-    B_R(Rixdorf con Señas
-        Timm
+    B_R(<b>Rixdorf con Señas</b>
+        <i>Timm</i>
         Sessions: bi-monthly ?<br>
         <a href>rixdorfconsenas@posteo.de</a>
         <a href>ritmo-con-senas.de/berlin</a>)
@@ -65,7 +71,6 @@ flowchart TD
     class x BLU
     class x YEL
     class TUE ORA
-
 ```
 
 ## KlangFolk e.V.
