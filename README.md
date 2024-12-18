@@ -83,32 +83,33 @@ flowchart TD
 
     TUE{Tübingen City}
 
-    P{German Project Fundings}
+    P{German<br>Project Fundings}
 
     TUE_LOC{Local Companies}
     
-    KF(Tübingen<br>KlangFolk e.V.<br>
-    Board:<br>- Nikolai von Krusenstiern,<br>- ...,<br>
-    klangfolk.de)
+    KF(Tübingen<br><b>KlangFolk e.V.</b><br>
+    Board:<br>- <i>Nikolai von Krusenstiern</i>,<br>- ...,<br>
+    <a href="https://klangfolk.de" target="_blank">klangfolk.de</a>)
 
     TUE ==> |6k EUR<br>every Year| KF
     TUE_LOC --> KF
     P --> KF
     E -.-> |2025 ?| KF
 
-    MCS["Música con Señas<br>(Ritmo con Señas)"]
-    TF["Tü Folk Orchester<br>(Ethno)"]
-    BF["BalFolk<br>(BalFolk)"]
+    MCS["<b>Música con Señas</b><br>(Ritmo con Señas)"]
+    TF["<b>Tü Folk Orchester</b><br>(Ethno)"]
+    BF["<b>BalFolk</b><br>(BalFolk)"]
 
     KF <--> MCS
     KF <--> TF
     KF <--> BF
 
     MCS_1(Música con Señas<br>
-        Cristóbal Araya Altamirano & Cédric Berner)
+        <i>Cristóbal Araya Altamirano 
+        & Cédric Berner<i>)
 
     MCS_2(Música con Señas<br>
-        Nikolai von Krusenstiern)    
+        <i>Nikolai von Krusenstiern</i>)    
     
     MCS --> MCS_1
     MCS --> MCS_2
