@@ -6,13 +6,13 @@
 flowchart TD
     rcs[(<b>Ritmo con Señas<br>Germany</b>
     <i>Nikolai von Krusenstiern</i><br>
-    <a href>nikolai@ritmo-con-senas.de</a>
-    <a href>ritmo-con-senas.de</a>)]
+    <a href="mailto:nikolai@ritmo-con-senas.de">nikolai@ritmo-con-senas.de</a>
+    <a href="https://ritmo-con-senas.de" target="_blank">ritmo-con-senas.de</a>)]
 
     TUE[Tübingen<br>
     <b>KlangFolk e.V.</b><br>
-    <a href>vorstand@klangfolk.de</a>
-    <a href>klangfolk.de</a>]
+    <a href="mailto:vorstand@klangfolk.de target="_blank"">vorstand@klangfolk.de</a>
+    <a href="https://klangfolk.de" target="_blank">klangfolk.de</a>]
 
     DA[Darmstadt]
     
@@ -26,14 +26,14 @@ flowchart TD
         <i>Cristóbal Araya Altamirano
         & Cédric Berner</i>
         weekly: 8-20<br>
-        <a href>mcs@klangfolk.de</a>
-        <a href>klangfolk.de/mcs</a>)
+        <a href="mailto:mcs@klangfolk.de" target="_blank">mcs@klangfolk.de</a>
+        <a href="https://klangfolk.de/mcs" target="_blank">klangfolk.de/mcs</a>)
 
     TUE_MCS_2(<b>Música con Señas</b>
         <i>Nikolai von Krusenstiern</i>
         bi-weekly: 5-12<br>
-        <a href>nikolai@ritmo-con-senas.de</a>
-        <a href>klangfolk.de/mcs</a>)
+        <a href="mailto:nikolai@ritmo-con-senas.de" target="_blank">nikolai@ritmo-con-senas.de</a>
+        <a href="https://klangfolk.de/mcs" target="_blank">klangfolk.de/mcs</a>)
     
     TUE <--> TUE_MCS
     TUE <--> TUE_MCS_2
@@ -41,22 +41,22 @@ flowchart TD
     DA_MCS(<b>Música con Señas</b>
         <i>Nikolai von Krusenstiern</i>
         monthly: 5-12<br>
-        <a href>nikolai@ritmo-con-senas.de</a>
-        <a href>ritmo-con-senas.de/darmstadt</a>)
+        <a href="mailto:nikolai@ritmo-con-senas.de" target="_blank">nikolai@ritmo-con-senas.de</a>
+        <a href="https://ritmo-con-senas.de/darmstadt" target="_blank">ritmo-con-senas.de/darmstadt</a>)
 
     DA --> DA_MCS
 
     B_P(<b>Percussion and Brass Band</b>
         <i>Bruno Abulafia</i>
         Concerts: monthly ?<br>
-        <a href>bruno@ritmo-con-senas.de</a>
-        <a href>ritmo-con-senas.de/berlin</a>)
+        <a href="mailto:bruno@ritmo-con-senas.de" target="_blank">bruno@ritmo-con-senas.de</a>
+        <a href="https://ritmo-con-senas.de/berlin" target="_blank">ritmo-con-senas.de/berlin</a>)
 
     B_R(<b>Rixdorf con Señas</b>
         <i>Timm</i>
         Sessions: bi-monthly ?<br>
-        <a href>rixdorfconsenas@posteo.de</a>
-        <a href>ritmo-con-senas.de/berlin</a>)
+        <a href="mailto:rixdorfconsenas@posteo.de" target="_blank">rixdorfconsenas@posteo.de</a>
+        <a href="https://ritmo-con-senas.de/berlin" target="_blank">ritmo-con-senas.de/berlin</a>)
     B --> B_P
     B --> B_R
 
@@ -71,6 +71,7 @@ flowchart TD
     class x BLU
     class x YEL
     class TUE ORA
+
 ```
 
 ## KlangFolk e.V.
