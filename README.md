@@ -75,15 +75,15 @@ flowchart TD
         yearly 6k Euro}
     
     KF(Tübingen<br>KlangFolk e.V.<br>
-    Nikolai von Krusenstiern, ...<br>
+    Board:<br>- Nikolai von Krusenstiern,<br>- ...,<br>
     klangfolk.de)
 
     TUE --> KF
     E -.-> KF
 
-    MCS[Música con Señas]
-    TF[Tü Folk Orchester]
-    BF[BalFolk]
+    MCS["Música con Señas<br>(Ritmo con Señas)"]
+    TF["Tü Folk Orchester<br>(Ethno)"]
+    BF["BalFolk<br>(BalFolk)"]
 
     KF <--> MCS
     KF <--> TF
